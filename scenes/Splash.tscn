@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://fonts/PoetsenOne-Regular.ttf" type="DynamicFontData" id=1]
+
+[sub_resource type="DynamicFont" id=1]
+size = 100
+font_data = ExtResource( 1 )
+
+[node name="Splash" type="Node2D"]
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+margin_left = -5.60498
+margin_top = 561.319
+margin_right = 715.395
+margin_bottom = 799.319
+custom_fonts/normal_font = SubResource( 1 )
+bbcode_enabled = true
+bbcode_text = "[center]jspycpp[/center]"
+text = "jspycpp"
+__meta__ = {
+"_edit_use_anchors_": false
+}

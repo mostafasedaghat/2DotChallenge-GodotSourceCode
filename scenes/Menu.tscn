@@ -1,0 +1,67 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://fonts/PoetsenOne-Regular.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://scripts/Menu.gd" type="Script" id=2]
+[ext_resource path="res://sprites/play button.png" type="Texture" id=3]
+[ext_resource path="res://animation/playbtn_idle.tres" type="Animation" id=4]
+[ext_resource path="res://scripts/PlayBtn.gd" type="Script" id=5]
+
+[sub_resource type="DynamicFont" id=1]
+size = 100
+font_data = ExtResource( 1 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 122.556, 52.3531 )
+
+[node name="Menu" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="Title" type="RichTextLabel" parent="."]
+margin_top = 128.0
+margin_right = 717.0
+margin_bottom = 411.0
+custom_fonts/normal_font = SubResource( 1 )
+bbcode_enabled = true
+bbcode_text = "[center]2 Dot
+ Challenge[/center]"
+text = "2 Dot
+ Challenge"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TitleScore" type="RichTextLabel" parent="."]
+margin_top = 498.918
+margin_right = 717.0
+margin_bottom = 670.918
+custom_fonts/normal_font = SubResource( 1 )
+bbcode_enabled = true
+bbcode_text = "[center]Score[/center]"
+text = "Score"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="scorevalue" type="RichTextLabel" parent="."]
+margin_top = 624.0
+margin_right = 717.0
+margin_bottom = 756.0
+custom_fonts/normal_font = SubResource( 1 )
+bbcode_enabled = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="playAnimation" type="AnimationPlayer" parent="."]
+anims/idle = ExtResource( 4 )
+
+[node name="Area2D" type="Area2D" parent="."]
+script = ExtResource( 5 )
+
+[node name="playbtn" type="Sprite" parent="Area2D"]
+position = Vector2( 359.767, 1024 )
+texture = ExtResource( 3 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( 360.18, 1023.67 )
+shape = SubResource( 2 )

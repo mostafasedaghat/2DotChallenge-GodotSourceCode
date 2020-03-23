@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Italian Mom.ogg-f41000c1eeec365c9c923fad3432506b.oggstr"
+
+[deps]
+
+source_file="res://audio/Italian Mom.ogg"
+dest_files=[ "res://.import/Italian Mom.ogg-f41000c1eeec365c9c923fad3432506b.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

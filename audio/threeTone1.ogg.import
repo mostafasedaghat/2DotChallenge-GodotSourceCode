@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/threeTone1.ogg-fa98972e984b4c236aa2c561e42038d8.oggstr"
+
+[deps]
+
+source_file="res://audio/threeTone1.ogg"
+dest_files=[ "res://.import/threeTone1.ogg-fa98972e984b4c236aa2c561e42038d8.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0
