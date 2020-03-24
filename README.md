@@ -1,2 +1,2 @@
-# 2DotChallengeGameSourceCode
- Sample Godot Game Source
+# 2 Dot Challenge - Godot Source Code
+2 Dot challenge source code
